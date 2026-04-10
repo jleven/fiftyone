@@ -297,7 +297,6 @@ class SegmentAnything3ImageModel(fosam.SegmentAnythingModel):
                         ),
                     )
                 )
-            print(datapoint)
             datapoints.append(transform(datapoint))
         return sam3.train.data.collator.collate_fn_api(
             datapoints, dict_key="datapoints"
