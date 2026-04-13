@@ -116,7 +116,7 @@ if (process.argv.includes("--write")) {
     process.platform === "darwin"
       ? "open"
       : process.platform === "win32"
-      ? "start"
+      ? "start \"\""
       : "xdg-open";
 
   execSync(`${opener} "${url}"`);
